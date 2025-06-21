@@ -9,8 +9,8 @@
 A full-stack web application built with:
 
 - 🖥️ **Frontend:** Static HTML, CSS, and JavaScript (`public/`)
-- 🧠 **Backend:** Python Flask API (`src/`)
-- 🗄️ **Database:** SQLite
+- 🧠 **Backend:** node js (`src/`)
+- 🗄️ **Database:** SQLite or connect with AWS RDS service 
 - 🐳 **Deployment:** Dockerized for easy setup
 
 ---
