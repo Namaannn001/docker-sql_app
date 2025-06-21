@@ -25,9 +25,9 @@ public/
   └── script.js
 
 src/
-  ├── app.py
-  ├── database.py
-  └── routes.py
+  ├── app.js
+  ├── database.js
+  └── routes.js
 
 Dockerfile
 package.json
