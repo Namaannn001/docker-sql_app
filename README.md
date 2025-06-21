@@ -88,7 +88,7 @@ This is a full-stack Node.js application built with Express.js, which serves a s
 
 ```
 
-docker-sql\_app-main/
+docker-sql_app
 │
 ├── src/               # Application source code
 │   ├── app.js         # Main server file
@@ -130,7 +130,7 @@ To run with Docker:
 
 ```bash
 # 1. Clone or download this repository
-cd docker-sql_app-main
+cd docker-sql_app
 
 # 2. Install dependencies
 npm install
