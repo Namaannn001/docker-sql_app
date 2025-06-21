@@ -84,35 +84,6 @@ Here’s a clean and professional `README.md` file you can use for your project 
 
 This is a full-stack Node.js application built with Express.js, which serves a simple frontend and connects to a backend database (SQL-based). The app can run both locally and inside a Docker container.
 
-## 📁 Project Structure
-
-```
-
-docker-sql_app
-│
-├── src/               # Application source code
-│   ├── app.js         # Main server file
-│   ├── routes.js      # Routes definitions
-│   └── database.js    # Database connection logic
-│
-├── public/            # Static frontend files (HTML/CSS/JS)
-├── package.json       # Node.js dependencies and scripts
-├── Dockerfile         # Docker setup file
-└── README.md          # Project documentation
-
-````
-
----
-
-## 🚀 Features
-
-- Node.js & Express-based backend
-- SQL database integration
-- Static frontend served from `/public`
-- Docker support for containerized deployment
-
----
-
 ## 🔧 Prerequisites
 
 To run locally:
