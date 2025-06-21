@@ -9,7 +9,7 @@
 A full-stack web application built with:
 
 - 🖥️ **Frontend:** Static HTML, CSS, and JavaScript (`public/`)
-- 🧠 **Backend:** node js (`src/`)
+- 🧠 **Backend:** node.js and express based backend (`src/`)
 - 🗄️ **Database:** SQLite or connect with AWS RDS service 
 - 🐳 **Deployment:** Dockerized for easy setup
 
@@ -78,10 +78,9 @@ If you want to run the app **without Docker**, follow these steps:
 
 Here’s a clean and professional `README.md` file you can use for your project (`docker-sql_app-main`). It includes both **Docker** and **local (non-Docker)** usage instructions:
 
----
 
 
-# SQL-Based Full Stack Node.js App
+## SQL-Based Full Stack Node.js App
 
 This is a full-stack Node.js application built with Express.js, which serves a simple frontend and connects to a backend database (SQL-based). The app can run both locally and inside a Docker container.
 
