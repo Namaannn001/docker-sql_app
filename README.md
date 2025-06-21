@@ -41,7 +41,7 @@ package-lock.json
 Once deployed, the app will be accessible at:
 
 ```
-http://localhost:5000
+http://localhost:3000
 ```
 
 You can interact with the frontend and backend APIs easily.
@@ -60,7 +60,7 @@ docker pull namaannn/sql-app:latest
 ### 2. Run the Container
 
 ```bash
-docker run -d -p 5000:5000 namaannn/sql-app
+docker run -d -p 3000:3000 namaannn/sql-app
 ```
 
 ### 3. Access the App
@@ -68,7 +68,7 @@ docker run -d -p 5000:5000 namaannn/sql-app
 Navigate to:
 
 ```
-http://localhost:5000
+http://localhost:3000
 ```
 
 ---
@@ -77,63 +77,105 @@ http://localhost:5000
 
 If you want to run the app **without Docker**, follow these steps:
 
-### 1. Clone the Repository
+Here’s a clean and professional `README.md` file you can use for your project (`docker-sql_app-main`). It includes both **Docker** and **local (non-Docker)** usage instructions:
+
+---
+
+
+# SQL-Based Full Stack Node.js App
+
+This is a full-stack Node.js application built with Express.js, which serves a simple frontend and connects to a backend database (SQL-based). The app can run both locally and inside a Docker container.
+
+## 📁 Project Structure
+
+```
+
+docker-sql\_app-main/
+│
+├── src/               # Application source code
+│   ├── app.js         # Main server file
+│   ├── routes.js      # Routes definitions
+│   └── database.js    # Database connection logic
+│
+├── public/            # Static frontend files (HTML/CSS/JS)
+├── package.json       # Node.js dependencies and scripts
+├── Dockerfile         # Docker setup file
+└── README.md          # Project documentation
+
+````
+
+---
+
+## 🚀 Features
+
+- Node.js & Express-based backend
+- SQL database integration
+- Static frontend served from `/public`
+- Docker support for containerized deployment
+
+---
+
+## 🔧 Prerequisites
+
+To run locally:
+- Node.js & npm
+- (Optional) MySQL or any SQL DB running if connected
+
+To run with Docker:
+- Docker installed on your system
+
+---
+
+## 🛠️ Setup Instructions
+
+### ▶️ Run Locally (Without Docker)
 
 ```bash
-git clone https://github.com/namaannn001/sql-app.git
-cd sql-app
+# 1. Clone or download this repository
+cd docker-sql_app-main
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the server
+node src/app.js
+
+# 4. Visit the app
+http://localhost:3000
+````
+
+> Make sure your database (if used) is running and connected in `src/database.js`.
+
+---
+
+### 🐳 Run With Docker
+
+```bash
+# 1. Build the Docker image
+docker build -t namaannn/sql-app .
+
+# 2. Run the container on port 3000
+docker run -d -p 3000:3000 namaannn/sql-app
+
+# 3. Visit the app
+http://localhost:3000
 ```
 
 ---
 
-### 2. Create a Python Virtual Environment
+## 🔍 Debugging Tips
 
-```bash
-python3 -m venv venv
-source venv/bin/activate  # (Linux/Mac)
-venv\Scripts\activate     # (Windows)
-```
+* Check logs:
 
----
+  ```bash
+  docker logs <container_id>
+  ```
 
-### 3. Install Python Dependencies
+* Check if container is running:
 
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 4. Run the Flask Server
-
-```bash
-cd src
-python app.py
-```
-
-The app should now be available at [http://localhost:5000](http://localhost:5000).
-
----
-
-## 📜 API Overview
-
-Example routes (based on `routes.py`):
-
-| Method | Endpoint        | Description            |
-|:-------|:-----------------|:------------------------|
-| GET    | `/api/data`      | Fetch records            |
-| POST   | `/api/data`      | Insert new record         |
-
-*(You can expand this section based on your exact routes.)*
-
----
-
-## 📋 Requirements
-
-- Python 3.8+
-- Flask
-- SQLite (comes built-in)
-- Node.js (optional, only if you modify frontend tools)
+  ```bash
+  docker ps
+  ```
 
 ---
 
